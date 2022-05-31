@@ -3,11 +3,12 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run : echo Hello world
-    - uses: Run a multiple line script
-      run : |
-        echo Line 1
-        echo Line 2
+    
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run a one-line script
+        run: echo Hello world
+      - name: Run a multiple line script
+        run: |
+            echo Line 1
+            echo Line 2
