@@ -1,5 +1,7 @@
 name: JS Actions 
-on: [push]
+on: 
+  pull_request:
+    types: [labeled]
 jobs:
   action:
     runs-on: ubuntu-latest
@@ -9,8 +11,9 @@ jobs:
       
       - name: hello-action
         uses: ./.github/actions/hello-world
-        with: 
-          # first-greeting: "Learning Lab User"
-          # second-greeting: "Second Learning Lab User"
-          third-greeting: "Third Learning Lab User"
-          
+        # with: 
+        #   first-greeting: "Learning Lab User"
+        #   second-greeting: "Second Learning Lab User"
+        #   third-greeting: "Third Learning Lab User"
+      - name: ha-ha
+        uses: ./.github/actions/joke-action
