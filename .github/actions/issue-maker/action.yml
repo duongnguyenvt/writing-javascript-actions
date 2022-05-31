@@ -14,4 +14,4 @@ inputs:
 
 runs:
   using: "node12"
-  with: "index.js"
+  main: "index.js"
