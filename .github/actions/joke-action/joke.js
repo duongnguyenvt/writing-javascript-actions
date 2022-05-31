@@ -1,4 +1,4 @@
-const request = reuqire("request-promise");
+const request = require("request-promise");
 
 const options = {
     method: "GET",
