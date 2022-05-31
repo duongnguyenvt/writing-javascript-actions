@@ -15,6 +15,6 @@ inputs:
     description: "a thrid greeting"
     required: false
 
-# runs:
-#   using: "node12"
-#   main: "main.js"
+runs:
+  using: "node12"
+  main: "main.js"
