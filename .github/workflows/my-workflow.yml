@@ -1,7 +1,7 @@
 name: JS Actions 
 on: [push]
 jobs:
-  build:
+  action:
     runs-on: ubuntu-latest
     
     steps:
